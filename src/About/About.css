@@ -1,0 +1,117 @@
+.about-section {
+  margin: 5rem 0;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-details-container {
+  display: flex;
+  justify-content: space-around;
+}
+.about-img-container {
+  width: 500px;
+}
+
+.about-img-container img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  padding: 10px;
+}
+
+.about-text {
+  width: 500px;
+}
+
+.about-text h3 {
+  text-transform: capitalize;
+}
+
+.about-text p {
+  /* text-transform: capitalize; */
+  font-size: 1.4rem;
+}
+
+.cv-btn {
+  text-transform: capitalize;
+  border: 2px solid black;
+  font-size: 1.2rem;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  transition: all 0.4s ease-in-out;
+  margin-top: 20px;
+  height: 45px;
+  width: 150px;
+  background: transparent;
+}
+.cv-btn:hover {
+  background-color: black;
+}
+
+.cv-btn a {
+  text-decoration: none;
+  color: black;
+}
+.cv-btn a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .about-section {
+    overflow-x: hidden;
+  }
+
+  .about-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .about-img-container {
+    width: 100%;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .about-img-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.experience_wrapper {
+  margin-top: 4rem;
+}
+
+.company_title {
+  margin: 0;
+  /* color: red; */
+}
+
+.date_button {
+  background: transparent;
+  color: black;
+  height: 45px;
+  width: auto;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.experience_list {
+  margin-top: 2rem;
+}
+
+.list_item {
+  font-size: 1.2rem;
+}

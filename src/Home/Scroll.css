@@ -1,0 +1,33 @@
+.scroll-to-top{
+    position: fixed;
+    bottom: 80px;
+     right: 20px;
+    background-color: whitesmoke;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    z-index: 10;
+}
+
+
+.scroll-icon{
+    font-size: 1.8rem;
+    color: black;
+    transition: all 0.5s ease-in-out;
+    animation-name: blink;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes blink {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
