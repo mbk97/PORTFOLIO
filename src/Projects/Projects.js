@@ -28,11 +28,7 @@ const Projects = () => {
       <div className="projects">
         {projectDetails.map((item) => {
           return (
-            <div
-              className="project-container"
-              key={item.id}
-              data-aos={item.dataAos}
-            >
+            <div className="project-container" key={item.id}>
               <img src={item.projectImage} alt="" className="project-img" />
 
               <h2 className="project-title">{item.projectName}</h2>
