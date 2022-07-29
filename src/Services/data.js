@@ -10,7 +10,7 @@ export const cardItems = [
     cardName: "Website  development",
     icon: <BiCodeCurly />,
     cardText:
-      "I use the various web technologies and the best software practices to build user friendly web applications",
+      "I use various web technologies and the best software practices to build user friendly web applications",
     dataAos: "fade-left",
   },
   {

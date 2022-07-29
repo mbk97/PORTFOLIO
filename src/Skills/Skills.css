@@ -3,8 +3,9 @@
 }
 
 .skills-container {
+  margin: 25px 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   place-items: center;
 }
@@ -31,10 +32,6 @@
   .skill-card {
     width: 90%;
   }
-}
-
-.skill-card:hover {
-  transform: scale(1.1);
 }
 
 .javascript {

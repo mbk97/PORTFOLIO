@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,18 +19,14 @@ const About = () => {
         </div>
 
         <div className="about-text" data-aos="fade-left">
-          <h3>hi, i'm Mubarak</h3>
+          <h1>Hi, i'm Mubarak</h1>
           <p>
             A detail-oriented Front-end web developer, with over 2 years of
             progressive experience and Diligence about producing exceptionally
             clean, and secure code; while successfully achieving browser, device
             and operating system compatibility objectives.
           </p>
-          <button className="cv-btn">
-            <a href="/Resume/mbk.pdf" download>
-              download cv
-            </a>
-          </button>
+
           <div className="experience_wrapper">
             <Experience />
           </div>

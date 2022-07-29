@@ -21,11 +21,15 @@
   height: 400px;
   object-fit: cover;
   object-position: center;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .about-text {
   width: 500px;
+}
+
+.about-text h1 {
+  margin: 10px 0;
 }
 
 .about-text h3 {
@@ -35,34 +39,6 @@
 .about-text p {
   /* text-transform: capitalize; */
   font-size: 1.4rem;
-}
-
-.cv-btn {
-  text-transform: capitalize;
-  border: 2px solid black;
-  font-size: 1.2rem;
-  padding: 3px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  color: black;
-  transition: all 0.4s ease-in-out;
-  margin-top: 20px;
-  height: 45px;
-  width: 150px;
-  background: transparent;
-}
-.cv-btn:hover {
-  background-color: black;
-}
-
-.cv-btn a {
-  text-decoration: none;
-  color: black;
-}
-.cv-btn a:hover {
-  color: white;
 }
 
 @media screen and (max-width: 700px) {
@@ -95,8 +71,12 @@
 }
 
 .company_title {
-  margin: 0;
+  /* margin: 0; */
   /* color: red; */
+}
+
+.company_name {
+  margin: 10px 0;
 }
 
 .date_button {
@@ -106,10 +86,12 @@
   width: auto;
   border-radius: 8px;
   font-size: 18px;
+  padding: 0 10px;
 }
 
 .experience_list {
   margin-top: 2rem;
+  margin-left: 20px;
 }
 
 .list_item {

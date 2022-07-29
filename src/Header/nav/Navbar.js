@@ -1,63 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
 import { BiMenuAltLeft } from "react-icons/bi";
-import { GrClose } from "react-icons/gr";
+import { AiOutlineClose } from "react-icons/ai";
+import { navItems } from "./data";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => {
     setClick(!click);
   };
-  const closeMobileMenu = () => setClick(!click);
-  const navItems = [
-    {
-      id: 1,
-      name: "home",
-      path: "home",
-    },
-    {
-      id: 2,
-      name: "about",
-      path: "about",
-    },
-    {
-      id: 3,
-      name: "services",
-      path: "services",
-    },
-    {
-      id: 4,
-      name: "skills",
-      path: "skills",
-    },
-    {
-      id: 5,
-      name: "projects",
-      path: "projects",
-    },
-    {
-      id: 6,
-      name: "contacts",
-      path: "contacts",
-    },
-  ];
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.style.overflow = click ? "hidden" : "auto";
+  }, [click]);
 
   return (
     <nav>
       <div className="logo-container">
-        <img src="/images/about-img.jpg" alt="" />
-        <h2>Mubarak Muhammed</h2>
+        <img src="/images/logo.jpg" alt="" />
       </div>
 
       <ul className={click ? "nav-container active" : "nav-container "}>
+        <div className="nav-logo-wrapper">
+          <img src="/images/logo.jpg" alt="" className="nav-logo" />
+          <h1>Mubarak Muhammed</h1>
+        </div>
         {navItems.map((item) => {
           return (
             <>
               <li className="nav-item" key={item.id}>
                 <Link
                   to={item.path}
-                  onClick={closeMobileMenu}
+                  onClick={handleClick}
                   smooth={true}
                   duration={1000}
                   className="link"
@@ -65,14 +41,20 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               </li>
+              <div className="menu-btn close" onClick={handleClick}>
+                <AiOutlineClose />
+              </div>
             </>
           );
         })}
       </ul>
 
-      <button className="menu-btn" onClick={handleClick}>
-        {click ? <GrClose /> : <BiMenuAltLeft />}
-      </button>
+      <div
+        onClick={handleClick}
+        className={click ? "menu-btn hide" : "menu-btn"}
+      >
+        <BiMenuAltLeft />
+      </div>
     </nav>
   );
 };

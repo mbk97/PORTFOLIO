@@ -1,0 +1,145 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+  background-color: #000000;
+  color: #ffff;
+  height: 90px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.nav-container {
+  position: absolute;
+  width: 90vw;
+  height: 100vh;
+  left: -9000px;
+  top: 0;
+  list-style: none;
+  background: rgba(0, 0, 0, 0.93);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.nav-container.active {
+  left: 0;
+  opacity: 1;
+}
+
+.nav-item {
+  margin: 10px 0;
+}
+
+.nav-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-wrapper h1 {
+  font-size: 2.5rem;
+}
+
+.nav-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 10px;
+}
+
+.link {
+  font-size: 2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.menu-btn {
+  display: block;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.menu-btn.hide {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  /* .logo-container {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+
+  .menu-btn {
+    display: block;
+    background: transparent;
+    font-size: 2.4rem;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  } */
+
+  nav {
+    position: relative;
+    margin: 0 10px;
+  }
+
+  .nav-logo-wrapper h1 {
+    font-size: 1rem;
+  }
+
+  .menu-btn {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .nav-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 10px;
+  }
+
+  .nav-container {
+    width: 100vw;
+  }
+
+  /* .nav-container.active {
+    left: 0;
+    opacity: 1;
+  } */
+
+  .link {
+    font-size: 2rem;
+  }
+}

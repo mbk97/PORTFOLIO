@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+
+.main-introduction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 40px;
+}
+
+.introduction-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+}
+
+.intro-paragraph {
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 600px;
+}
+
+.intro-text {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.name {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.job-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.introduction-img {
+  margin-right: 50px;
+}
+
+.introduction-img img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wave {
+  color: #fac135;
+  font-size: 2rem;
+}
+
+.cv-btn {
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  transition: all 0.4s ease-in-out;
+  margin-top: 20px;
+  height: 45px;
+  width: 160px;
+  background: white;
+}
+
+.cv-btn:hover {
+  background-color: black;
+}
+
+.cv-btn a {
+  text-decoration: none;
+  color: black;
+}
+.cv-btn a:hover {
+  color: white;
+}
+@media (max-width: 1100px) {
+  .introduction-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .introduction-img {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-introduction-container {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+  }
+  .intro-paragraph {
+    width: 85%;
+  }
+
+  .typing-container {
+  }
+
+  .introduction-container {
+    display: flex;
+    align-items: center;
+  }
+
+  /* .introduction-img {
+    margin-right: 35px;
+  } */
+
+  .introduction-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .name {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .job-title {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+}
